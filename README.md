@@ -1,3 +1,13 @@
+This is Lasertank 4.1.2 by Jim Kindley, ported to Android.
+
+Unlike other ports, this is a 1:1 translation of the original source files.
+1000s of levels included.
+
+
+![Lasertank](lasertank.jpg)
+
+
+
 LaserTank 4.1.2 (Jim Kindley) - Android/Java 7 port for AIDE
 ==============================================================
 1. Copy the "LaserTank" folder to your phone (e.g. to /sdcard/AppProjects/).
