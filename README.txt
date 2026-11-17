@@ -1,29 +1,30 @@
-LaserTank 4.1.2 (Jim Kindley) - Android/Java-7-Port fuer AIDE
+LaserTank 4.1.2 (Jim Kindley) - Android/Java 7 port for AIDE
 ==============================================================
-1. Ordner "LaserTank" auf das Handy kopieren (z.B. nach /sdcard/AppProjects/).
-2. AIDE > Open Project > Ordner waehlen > Run (Play-Button).
+1. Copy the "LaserTank" folder to your phone (e.g. to /sdcard/AppProjects/).
+2. In AIDE, choose Open Project > select the folder > Run (Play button).
 
-Bedienung
-  Pfeiltasten  = drehen / fahren (gedrueckt halten = Dauerfahren)
-  FIRE         = schiessen        UNDO = letzten Zug zurueck
-  Spielfeld antippen = dorthin fahren (wie linke Maustaste)
-  Spielfeld lang druecken = in diese Richtung schiessen (wie rechte Maustaste)
-  Menue (oben rechts): Position speichern/abrufen, Anfang, Level <<, >>,
-  Level oeffnen, Levelset waehlen, Tipp, Schwierigkeitsgrade, Initialen,
-  Animation, Sound, Geloeste Level ueberspringen
+Controls
+  Arrow keys  = turn / move (hold down = continuous movement)
+  FIRE        = shoot             UNDO = undo the last move
+  Tap the playfield = move there (like the left mouse button)
+  Long-press the playfield = shoot in that direction (like the right mouse button)
+  Menu (top right): save/load position, restart, previous/next level,
+  open level, choose level set, hint, difficulty levels, initials,
+  animation, sound, skip solved levels
 
-Levelsets: LaserTank, Challenge-I .. Challenge-V (Menue > Levelset waehlen).
-  Jedes Set merkt sich sein zuletzt gespieltes Level und seine eigenen High Scores.
-  Neues Set: Name.lvl (+ optional Name.ghs) nach assets/ legen und den Namen in
-  MainActivity.java im Array SETS eintragen.
+Level sets: LaserTank, Challenge-I through Challenge-V (Menu > Choose level set).
+  Each set remembers its most recently played level and has its own high scores.
+  To add a new set: put Name.lvl (and optionally Name.ghs) in assets/ and add
+  its name to the SETS array in MainActivity.java.
 
-High Scores
-  Oben im Bild: "HS" = eigener Bestwert, "Global" = Bestwert aus der .ghs-Datei
-  (Zuege/Schuesse Initialen) fuer das aktuelle Level.
-  Eigene Rekorde werden pro Set in <Name>.hs gespeichert (Format wie im Original).
+High scores
+  At the top of the screen: "HS" = your personal best, "Global" = the best score
+  from the .ghs file (moves/shots/initials) for the current level.
+  Your own records are saved separately for each set in <Name>.hs
+  (using the original file format).
 
-Dateien
-  src/jk/lasertank/MainActivity.java   gesamter Code (Engine = 1:1 aus LTANK2.C / LTANK.C)
-  assets/*.lvl, *.ghs                  Originallevel + globale High Scores
-  assets/sprites.png                   Game.BMP + Mask.BMP, Transparenz vorberechnet
-  assets/sounds/*.wav                  Original-Sounds
+Files
+  src/jk/lasertank/MainActivity.java   all source code (engine = 1:1 port from LTANK2.C / LTANK.C)
+  assets/*.lvl, *.ghs                  original levels + global high scores
+  assets/sprites.png                   Game.BMP + Mask.BMP, transparency precomputed
+  assets/sounds/*.wav                  original sounds
